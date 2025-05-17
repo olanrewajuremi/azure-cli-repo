@@ -1,0 +1,12 @@
+az vm create `
+  --resource-group learn-azure-cli-RG `
+  --name testCliVM `
+  --image Ubuntu2204 `
+  --vnet-name testCliVnet `
+  --subnet exampleSubnet `
+  --location eastus `
+  --admin-username azureuser `
+  --generate-ssh-keys `
+  --size Standard_B1s `
+  --output json `
+  --verbose
