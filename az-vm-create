@@ -36,4 +36,4 @@ az vm create `
 az group delete --name learn-azure-cli
 ```
 
-
+az group delete --name learn-azure-cli-RG
