@@ -1,3 +1,20 @@
+# Create VM using Azure CLI
+
+### Start with creating a Resource Group
+
+```
+az group create --name learn-azure-cli --location eastus
+```
+
+### Set the Resource Group as default (Optional)
+
+```
+az config set defaults.group=learn-azure-cli
+```
+
+### Create VM with Vnet
+
+```
 az vm create `
   --resource-group learn-azure-cli-RG `
   --name testCliVM `
@@ -10,3 +27,5 @@ az vm create `
   --size Standard_B1s `
   --output json `
   --verbose
+
+
