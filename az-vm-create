@@ -28,4 +28,12 @@ az vm create `
   --output json `
   --verbose
 
+```
+
+### Delete the Resource Group to delete all the resources
+
+```
+az group delete --name learn-azure-cli
+```
+
 
